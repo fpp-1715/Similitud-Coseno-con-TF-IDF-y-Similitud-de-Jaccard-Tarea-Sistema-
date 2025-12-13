@@ -1,0 +1,9 @@
+El machine learning aplicado a la ciencia de datos permite extraer conocimiento de grandes volúmenes de información. Los científicos de datos utilizan algoritmos de aprendizaje automático para descubrir patrones ocultos.
+
+La minería de datos es el proceso de descubrir patrones en conjuntos de datos grandes. Esta disciplina combina estadística, inteligencia artificial y sistemas de bases de datos.
+
+El análisis predictivo utiliza modelos de aprendizaje automático para pronosticar eventos futuros. Las empresas utilizan estas técnicas para tomar decisiones basadas en datos.
+
+La visualización de datos es fundamental para comunicar los resultados del análisis. Gráficos y dashboards interactivos ayudan a entender patrones complejos en los datos.
+
+Python es uno de los lenguajes más populares para ciencia de datos y aprendizaje automático. Bibliotecas como scikit-learn, pandas y numpy facilitan el análisis de datos.

@@ -1,0 +1,9 @@
+La programación orientada a objetos es un paradigma de programación que organiza el código en objetos que contienen datos y métodos. Este enfoque facilita la reutilización del código y el mantenimiento del software.
+
+Las clases son plantillas que definen la estructura y el comportamiento de los objetos. Cada objeto es una instancia de una clase con sus propios valores de atributos.
+
+La herencia permite crear nuevas clases basadas en clases existentes. Las clases derivadas heredan los atributos y métodos de la clase base y pueden agregar funcionalidad adicional.
+
+El polimorfismo permite que objetos de diferentes clases respondan al mismo mensaje de manera diferente. Esto proporciona flexibilidad y extensibilidad en el diseño del software.
+
+La encapsulación oculta los detalles internos de implementación y expone solo la interfaz necesaria. Esto protege los datos y reduce la complejidad del sistema.

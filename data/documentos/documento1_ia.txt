@@ -1,0 +1,7 @@
+La inteligencia artificial es un campo de la informática que se enfoca en crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana. Esto incluye el aprendizaje automático, el procesamiento del lenguaje natural y la visión por computadora.
+
+El aprendizaje automático es una rama de la inteligencia artificial que permite a las máquinas aprender de los datos sin ser programadas explícitamente. Los algoritmos de aprendizaje automático pueden identificar patrones en grandes conjuntos de datos y hacer predicciones.
+
+Las redes neuronales son un tipo de modelo de aprendizaje automático inspirado en el cerebro humano. Estas redes consisten en capas de nodos interconectados que procesan información y aprenden a realizar tareas específicas.
+
+El procesamiento del lenguaje natural permite a las computadoras entender, interpretar y generar lenguaje humano. Esta tecnología se utiliza en asistentes virtuales, traductores automáticos y sistemas de análisis de sentimientos.

@@ -1,0 +1,7 @@
+El aprendizaje profundo es una técnica avanzada de inteligencia artificial basada en redes neuronales con múltiples capas. Esta tecnología ha revolucionado campos como el reconocimiento de imágenes y el procesamiento del lenguaje natural.
+
+Las redes neuronales convolucionales son especialmente efectivas para tareas de visión por computadora. Estas redes pueden identificar objetos, rostros y patrones en imágenes con alta precisión.
+
+El aprendizaje automático supervisado utiliza datos etiquetados para entrenar modelos predictivos. Los algoritmos aprenden la relación entre las características de entrada y las etiquetas de salida.
+
+Los transformers son una arquitectura de redes neuronales que ha revolucionado el procesamiento del lenguaje natural. Modelos como GPT y BERT utilizan esta arquitectura para generar texto y comprender el contexto.

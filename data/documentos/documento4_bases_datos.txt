@@ -1,0 +1,9 @@
+Las bases de datos son sistemas organizados para almacenar, gestionar y recuperar información. Existen diferentes tipos de bases de datos según las necesidades de cada aplicación.
+
+Las bases de datos relacionales utilizan tablas para organizar los datos. SQL es el lenguaje estándar para consultar y manipular datos en estos sistemas.
+
+Las bases de datos NoSQL ofrecen alternativas flexibles para almacenar datos no estructurados. MongoDB y Redis son ejemplos populares de bases de datos NoSQL.
+
+La normalización es un proceso que organiza las tablas para reducir la redundancia de datos. Las formas normales definen reglas para estructurar las bases de datos eficientemente.
+
+Los índices mejoran el rendimiento de las consultas al crear estructuras de acceso rápido. Sin embargo, los índices también consumen espacio y pueden ralentizar las operaciones de escritura.
