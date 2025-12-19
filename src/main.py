@@ -5,6 +5,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from processor import DocumentProcessor
 from similarity import SimilarityEngine
+import tkinter as tk
+from tkinter import filedialog
 
 # Configuración de la página
 st.set_page_config(
@@ -28,6 +30,24 @@ def init_similarity_engine():
 processor = init_processor()
 similarity_engine = init_similarity_engine()
 
+# Inicializar session_state para la ruta de carpeta
+if 'documents_folder' not in st.session_state:
+    st.session_state.documents_folder = r"E:\Ciber\sistema\Tarea Extraclase 2\proyecto_equipo8\data\documentos"
+
+# Función para abrir el diálogo de selección de carpeta
+def select_folder():
+    """Abre un diálogo para seleccionar carpeta"""
+    root = tk.Tk()
+    root.withdraw()  # Ocultar la ventana principal de tkinter
+    root.wm_attributes('-topmost', 1)  # Traer al frente
+    folder_path = filedialog.askdirectory(
+        title="Seleccionar carpeta de documentos",
+        initialdir=st.session_state.documents_folder
+    )
+    root.destroy()
+    if folder_path:  # Si el usuario seleccionó una carpeta (no canceló)
+        st.session_state.documents_folder = folder_path
+
 # Sidebar para configuración
 st.sidebar.header("⚙️ Configuración")
 
@@ -40,19 +60,19 @@ default_path = r"E:\Ciber\sistema\Tarea Extraclase 2\proyecto_equipo8\data\docum
 # Opción para elegir método de selección
 folder_method = st.sidebar.radio(
     "Método de selección:",
-    ["Ruta predeterminada", "Escribir ruta manualmente"],
+    ["Ruta predeterminada", "Explorador de archivos"],
     help="Elige cómo quieres seleccionar la carpeta de documentos"
 )
 
 if folder_method == "Ruta predeterminada":
     documents_folder = default_path
     st.sidebar.info(f"📂 Usando: `{documents_folder}`")
-else:
-    documents_folder = st.sidebar.text_input(
-        "✏️ Escribe la ruta completa de la carpeta:",
-        value=default_path,
-        help="Ejemplo: C:\\Users\\MiUsuario\\Documentos\\MisArchivos"
-    )
+else:  # Explorador de archivos
+    # Botón para abrir el explorador de archivos
+    if st.sidebar.button("📂 Abrir Explorador de Archivos", type="secondary"):
+        select_folder()
+    documents_folder = st.session_state.documents_folder
+    st.sidebar.info(f"📂 Carpeta seleccionada: `{documents_folder}`")
 
 # Mostrar ruta actual
 st.sidebar.markdown(f"**Ruta actual:** `{documents_folder}`")

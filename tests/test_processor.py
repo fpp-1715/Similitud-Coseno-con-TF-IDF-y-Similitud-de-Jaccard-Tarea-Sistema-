@@ -55,7 +55,7 @@ class TestDocumentProcessor(unittest.TestCase):
     def test_tokenize_empty(self):
         """Test: tokenización de cadena vacía"""
         tokens = self.processor.tokenize("")
-        self.assertEqual(tokens, [""])
+        self.assertEqual(tokens, [])
     
     def test_supported_extensions(self):
         """Test: extensiones soportadas"""

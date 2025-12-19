@@ -1,0 +1,45 @@
+ENDOCRINOLOGÍA Y TRASTORNOS METABÓLICOS
+
+La endocrinología estudia las glándulas de secreción interna y las hormonas que regulan múltiples funciones fisiológicas incluyendo metabolismo, crecimiento, reproducción y homeostasis.
+
+DIABETES MELLITUS:
+
+Diabetes Tipo 1: Enfermedad autoinmune con destrucción de células beta pancreáticas productoras de insulina. Los anticuerpos anti-GAD, anti-IA2 y anti-insulina son marcadores diagnósticos. Requiere insulinoterapia de por vida.
+
+Diabetes Tipo 2: Resistencia periférica a la insulina y deficiencia relativa de secreción. Asociada a obesidad, sedentarismo y síndrome metabólico. La hemoglobina glucosilada (HbA1c) superior a 6.5% confirma el diagnóstico.
+
+Complicaciones Microvasculares: Retinopatía diabética (principal causa de ceguera), nefropatía (insuficiencia renal crónica) y neuropatía periférica.
+
+Complicaciones Macrovasculares: Enfermedad coronaria, cerebrovascular y arteriopatía periférica.
+
+TRATAMIENTO FARMACOLÓGICO:
+
+Metformina: Biguanida que reduce la gluconeogénesis hepática y aumenta sensibilidad a insulina. Primera línea en diabetes tipo 2.
+
+Inhibidores SGLT2: Empagliflozina y dapagliflozina aumentan excreción renal de glucosa. Beneficios cardiovasculares y renales adicionales.
+
+Agonistas GLP-1: Liraglutida y semaglutida estimulan secreción de insulina dependiente de glucosa, retrasan vaciamiento gástrico y reducen peso corporal.
+
+Insulinas: Análogos de acción rápida (lispro, aspart), acción intermedia (NPH) y acción prolongada (glargina, degludec).
+
+TRASTORNOS TIROIDEOS:
+
+Hipotiroidismo: Deficiencia de hormonas tiroideas T3 y T4. Causado principalmente por tiroiditis de Hashimoto (autoinmune). Síntomas incluyen fatiga, intolerancia al frío, bradicardia, aumento de peso y mixedema.
+
+Hipertiroidismo: Exceso de hormonas tiroideas. La enfermedad de Graves es la causa más común (anticuerpos estimulantes del receptor de TSH). Produce taquicardia, pérdida de peso, nerviosismo, temblor y exoftalmos.
+
+TSH (hormona estimulante de tiroides) es la prueba de detección inicial. TSH elevada con T4 baja indica hipotiroidismo primario.
+
+Tratamiento: Levotiroxina en hipotiroidismo. Antitiroideos (metimazol, propiltiouracilo), yodo radioactivo o tiroidectomía en hipertiroidismo.
+
+SÍNDROME METABÓLICO:
+
+Conjunto de factores de riesgo cardiovascular que incluye obesidad abdominal (perímetro de cintura >102 cm en hombres, >88 cm en mujeres), hipertensión arterial, hiperglucemia en ayunas, triglicéridos elevados y HDL bajo.
+
+La resistencia a insulina es el mecanismo fisiopatológico central. El tejido adiposo visceral secreta adipocinas proinflamatorias como TNF-alfa e IL-6.
+
+OSTEOPOROSIS:
+
+Reducción de masa ósea y deterioro microarquitectural que aumenta fragilidad. La densitometría ósea (DEXA) con T-score inferior a -2.5 desviaciones estándar confirma diagnóstico.
+
+Bifosfonatos como alendronato y risedronato inhiben resorción ósea mediada por osteoclastos. Denosumab es anticuerpo monoclonal anti-RANKL.

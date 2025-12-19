@@ -9,6 +9,53 @@ from typing import List, Tuple, Dict, Set
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+# Stopwords en español - palabras sin significado relevante
+SPANISH_STOPWORDS = {
+    # Artículos
+    'el', 'la', 'los', 'las', 'un', 'una', 'unos', 'unas',
+    # Preposiciones
+    'a', 'ante', 'bajo', 'cabe', 'con', 'contra', 'de', 'desde', 'durante',
+    'en', 'entre', 'hacia', 'hasta', 'mediante', 'para', 'por', 'según',
+    'sin', 'so', 'sobre', 'tras', 'versus', 'vía',
+    # Conjunciones
+    'y', 'e', 'ni', 'que', 'o', 'u', 'pero', 'mas', 'sino', 'aunque',
+    'si', 'como', 'porque', 'pues', 'luego', 'conque',
+    # Pronombres
+    'yo', 'tú', 'él', 'ella', 'nosotros', 'nosotras', 'vosotros', 'vosotras',
+    'ellos', 'ellas', 'usted', 'ustedes', 'me', 'te', 'se', 'lo', 'le',
+    'nos', 'os', 'les', 'mi', 'tu', 'su', 'nuestro', 'vuestro', 'suyo',
+    'mío', 'tuyo', 'este', 'ese', 'aquel', 'esta', 'esa', 'aquella',
+    'esto', 'eso', 'aquello', 'estos', 'esos', 'aquellos', 'estas', 'esas',
+    'aquellas', 'quien', 'quienes', 'cual', 'cuales', 'donde', 'cuando',
+    # Adverbios comunes
+    'muy', 'más', 'menos', 'poco', 'mucho', 'demasiado', 'bastante',
+    'además', 'también', 'tampoco', 'sí', 'no', 'nunca', 'siempre',
+    'jamás', 'aquí', 'ahí', 'allí', 'acá', 'allá', 'cerca', 'lejos',
+    'hoy', 'ayer', 'mañana', 'ahora', 'antes', 'después', 'luego',
+    'todavía', 'aún', 'ya', 'bien', 'mal', 'así', 'tal', 'tanto',
+    # Verbos auxiliares y comunes (infinitivo y conjugaciones frecuentes)
+    'ser', 'estar', 'haber', 'tener', 'hacer', 'poder', 'deber',
+    'ir', 'dar', 'saber', 'decir', 'ver', 'poner', 'querer',
+    'es', 'son', 'está', 'están', 'fue', 'fueron', 'sea', 'sean',
+    'ha', 'han', 'había', 'habían', 'hay', 'he', 'hemos',
+    'tiene', 'tienen', 'tenía', 'tenían', 'tuvo', 'tuvieron',
+    'hace', 'hacen', 'hizo', 'hicieron', 'haga', 'hagan',
+    'puede', 'pueden', 'pudo', 'pudieron', 'pueda', 'puedan',
+    'debe', 'deben', 'debía', 'debían', 'debió', 'debieron',
+    'va', 'van', 'fue', 'fueron', 'iba', 'iban', 'vaya', 'vayan',
+    'da', 'dan', 'dio', 'dieron', 'daba', 'daban',
+    'sabe', 'saben', 'sabía', 'sabían', 'supo', 'supieron',
+    'dice', 'dicen', 'dijo', 'dijeron', 'decía', 'decían',
+    've', 'ven', 'vio', 'vieron', 'veía', 'veían',
+    'pone', 'ponen', 'puso', 'pusieron', 'ponía', 'ponían',
+    'quiere', 'quieren', 'quiso', 'quisieron', 'quería', 'querían',
+    # Otros
+    'del', 'al', 'otro', 'otra', 'otros', 'otras', 'mismo', 'misma',
+    'todo', 'toda', 'todos', 'todas', 'cada', 'algo', 'nada', 'alguien',
+    'nadie', 'alguno', 'ninguno', 'alguna', 'ninguna', 'varios', 'varias',
+    'cualquier', 'cualquiera', 'cualesquiera', 'tal', 'tales'
+}
+
 
 class SimilarityEngine:
     """
@@ -39,12 +86,13 @@ class SimilarityEngine:
             - Matriz TF-IDF
             - Lista de nombres de características (términos)
         """
-        # Crear vectorizador TF-IDF
+        # Crear vectorizador TF-IDF con stopwords en español
         self.vectorizer = TfidfVectorizer(
             lowercase=True,
-            stop_words=None,  # No eliminar stopwords para mantener información
+            stop_words=list(SPANISH_STOPWORDS),  # Eliminar palabras vacías
             max_features=5000,  # Limitar características para eficiencia
-            ngram_range=(1, 1)  # Solo unigramas
+            ngram_range=(1, 1),  # Solo unigramas
+            min_df=1  # Mínimo 1 documento debe contener el término
         )
         
         # Construir matriz término-documento TF-IDF
@@ -70,6 +118,7 @@ class SimilarityEngine:
     ) -> List[Tuple[int, float]]:
         """
         Calcula la similitud de Jaccard entre el documento consulta y el resto
+        Filtra stopwords para considerar solo términos significativos
         
         Args:
             documents: Lista de textos de documentos
@@ -78,13 +127,15 @@ class SimilarityEngine:
         Returns:
             Lista de (índice, similitud) ordenada de mayor a menor
         """
-        # Obtener conjunto de términos del documento consulta
+        # Obtener conjunto de términos del documento consulta (sin stopwords)
         query_terms = set(documents[query_idx].lower().split())
+        query_terms = query_terms - SPANISH_STOPWORDS  # Eliminar palabras vacías
         
         results = []
         
         for i, doc in enumerate(documents):
             doc_terms = set(doc.lower().split())
+            doc_terms = doc_terms - SPANISH_STOPWORDS  # Eliminar palabras vacías
             
             # Calcular Jaccard: |A ∩ B| / |A ∪ B|
             intersection = len(query_terms & doc_terms)
@@ -203,6 +254,7 @@ class SimilarityEngine:
     ) -> np.ndarray:
         """
         Calcula la matriz de similitud entre todos los pares de documentos
+        Filtra stopwords para ambos métodos
         
         Args:
             documents: Lista de textos de documentos
@@ -215,13 +267,13 @@ class SimilarityEngine:
         similarity_matrix = np.zeros((n, n))
         
         if method == "tfidf":
-            vectorizer = TfidfVectorizer()
+            vectorizer = TfidfVectorizer(stop_words=list(SPANISH_STOPWORDS))
             tfidf_matrix = vectorizer.fit_transform(documents)
             similarity_matrix = cosine_similarity(tfidf_matrix)
         
         elif method == "jaccard":
-            # Convertir documentos a conjuntos de términos
-            term_sets = [set(doc.lower().split()) for doc in documents]
+            # Convertir documentos a conjuntos de términos (sin stopwords)
+            term_sets = [set(doc.lower().split()) - SPANISH_STOPWORDS for doc in documents]
             
             for i in range(n):
                 for j in range(n):

@@ -1,0 +1,37 @@
+NEUROLOGÍA Y ENFERMEDADES DEL SISTEMA NERVIOSO
+
+La neurología estudia la estructura, función y enfermedades del sistema nervioso central y periférico. El cerebro humano contiene aproximadamente 86 mil millones de neuronas interconectadas a través de sinapsis.
+
+ENFERMEDADES NEURODEGENERATIVAS:
+
+Enfermedad de Alzheimer: Demencia progresiva caracterizada por pérdida de memoria episódica, desorientación temporoespacial y deterioro cognitivo global. A nivel histopatológico se observan placas de beta-amiloide y ovillos neurofibrilares de proteína tau hiperfosforilada.
+
+Enfermedad de Parkinson: Trastorno del movimiento causado por degeneración de neuronas dopaminérgicas en la sustancia negra del mesencéfalo. Se manifiesta con temblor de reposo, rigidez muscular, bradicinesia y alteraciones posturales.
+
+Esclerosis Múltiple: Enfermedad autoinmune desmielinizante que afecta la sustancia blanca del sistema nervioso central. Cursa con episodios recurrentes de déficit neurológico como neuritis óptica, parestesias y debilidad muscular.
+
+Esclerosis Lateral Amiotrófica (ELA): Degeneración progresiva de motoneuronas superiores e inferiores. Produce debilidad muscular ascendente, fasciculaciones, atrofia y finalmente insuficiencia respiratoria.
+
+ACCIDENTE CEREBROVASCULAR:
+
+El ictus isquémico representa el 85% de los eventos cerebrovasculares agudos. La oclusión arterial produce hipoxia tisular y muerte neuronal en la zona del infarto.
+
+La escala NIHSS (National Institutes of Health Stroke Scale) cuantifica la severidad del déficit neurológico.
+
+La trombólisis intravenosa con activador tisular del plasminógeno (rtPA) debe administrarse dentro de las primeras 4.5 horas.
+
+La trombectomía mecánica está indicada en oclusiones de grandes vasos cerebrales.
+
+EPILEPSIA:
+
+Crisis convulsivas recurrentes por descargas eléctricas anormales de grupos neuronales. Las crisis tónico-clónicas generalizadas involucran pérdida de conciencia y movimientos musculares bruscos.
+
+El electroencefalograma (EEG) detecta actividad paroxística epileptiforme.
+
+Los anticonvulsivantes como levetiracetam, valproato y lamotrigina estabilizan las membranas neuronales.
+
+CEFALEAS:
+
+La migraña es una cefalea primaria con dolor pulsátil unilateral, fotofobia, fonofobia y náuseas. El aura precede a la fase de dolor en el 25% de los casos.
+
+Los triptanes como el sumatriptán son agonistas selectivos de receptores de serotonina 5-HT1B/1D utilizados en crisis agudas.

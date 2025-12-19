@@ -1,0 +1,31 @@
+CARDIOLOGÍA Y ENFERMEDADES CARDIOVASCULARES
+
+La cardiología es la rama de la medicina que se especializa en el diagnóstico y tratamiento de las enfermedades del corazón y del sistema circulatorio. Las patologías cardiovasculares representan la principal causa de mortalidad a nivel mundial.
+
+PRINCIPALES PATOLOGÍAS CARDÍACAS:
+
+Cardiopatía Isquémica: Se produce cuando existe una reducción del flujo sanguíneo al músculo cardíaco, generalmente causada por aterosclerosis coronaria. El infarto agudo de miocardio es la manifestación más grave.
+
+Insuficiencia Cardíaca: Condición en la cual el corazón no puede bombear sangre de manera eficiente. Los síntomas incluyen disnea, edema periférico y fatiga crónica. La fracción de eyección ventricular es un parámetro clave en su evaluación.
+
+Arritmias Cardíacas: Alteraciones en el ritmo normal del corazón. La fibrilación auricular es la arritmia sostenida más frecuente y aumenta significativamente el riesgo de eventos tromboembólicos cerebrales.
+
+Hipertensión Arterial: Presión arterial sistólica superior a 140 mmHg o diastólica mayor a 90 mmHg. Factor de riesgo modificable para enfermedad coronaria, insuficiencia cardíaca y accidente cerebrovascular.
+
+PRUEBAS DIAGNÓSTICAS:
+
+El electrocardiograma (ECG) registra la actividad eléctrica del corazón y es fundamental para detectar isquemia miocárdica, arritmias y alteraciones de la conducción.
+
+El ecocardiograma doppler permite evaluar la función ventricular, valvulopatías y anomalías estructurales mediante ultrasonido.
+
+La coronariografía es el estándar de oro para visualizar las arterias coronarias y detectar estenosis significativas.
+
+TRATAMIENTO FARMACOLÓGICO:
+
+Los betabloqueadores como el metoprolol reducen la frecuencia cardíaca y la demanda miocárdica de oxígeno.
+
+Los inhibidores de la enzima convertidora de angiotensina (IECA) como el enalapril mejoran la remodelación ventricular.
+
+Las estatinas como la atorvastatina reducen el colesterol LDL y estabilizan las placas ateroscleróticas.
+
+Los antiagregantes plaquetarios como el ácido acetilsalicílico previenen eventos trombóticos.

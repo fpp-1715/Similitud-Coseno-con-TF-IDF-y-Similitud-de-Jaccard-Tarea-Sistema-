@@ -1,6 +1,6 @@
 """
 Módulo para extracción de texto y preprocesamiento de documentos
-Soporta formatos TXT y PDF
+Soporta formatos TXT, PDF y PPTX
 """
 
 import os
@@ -22,6 +22,13 @@ try:
 except ImportError:
     PYPDF2_AVAILABLE = False
 
+# Importar python-pptx para archivos PowerPoint
+try:
+    from pptx import Presentation
+    PPTX_AVAILABLE = True
+except ImportError:
+    PPTX_AVAILABLE = False
+
 
 class DocumentProcessor:
     """
@@ -30,7 +37,7 @@ class DocumentProcessor:
     
     def __init__(self):
         """Inicializa el procesador de documentos"""
-        self.supported_extensions = ['.txt', '.pdf']
+        self.supported_extensions = ['.txt', '.pdf', '.pptx']
     
     def extract_text_from_txt(self, file_path: str) -> str:
         """
@@ -91,6 +98,34 @@ class DocumentProcessor:
         print(f"No se pudo extraer texto de {file_path}. Instale textract o PyPDF2.")
         return ""
     
+    def extract_text_from_pptx(self, file_path: str) -> str:
+        """
+        Extrae texto de un archivo .pptx (PowerPoint)
+        
+        Args:
+            file_path: Ruta del archivo .pptx
+            
+        Returns:
+            Contenido del archivo como string
+        """
+        if not PPTX_AVAILABLE:
+            print(f"python-pptx no está instalado. No se puede procesar {file_path}")
+            return ""
+        
+        try:
+            text = ""
+            prs = Presentation(file_path)
+            
+            for slide in prs.slides:
+                for shape in slide.shapes:
+                    if hasattr(shape, "text"):
+                        text += shape.text + "\n"
+            
+            return text
+        except Exception as e:
+            print(f"Error extrayendo texto de {file_path}: {e}")
+            return ""
+    
     def extract_text(self, file_path: str) -> str:
         """
         Extrae texto de un archivo según su extensión
@@ -107,6 +142,8 @@ class DocumentProcessor:
             return self.extract_text_from_txt(file_path)
         elif ext == '.pdf':
             return self.extract_text_from_pdf(file_path)
+        elif ext == '.pptx':
+            return self.extract_text_from_pptx(file_path)
         else:
             print(f"Formato no soportado: {ext}")
             return ""

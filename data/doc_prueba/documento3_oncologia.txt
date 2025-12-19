@@ -1,0 +1,39 @@
+ONCOLOGÍA Y NEOPLASIAS MALIGNAS
+
+La oncología es la especialidad médica dedicada al estudio, diagnóstico y tratamiento del cáncer. Las neoplasias malignas resultan de mutaciones genéticas que alteran los mecanismos de control del ciclo celular, proliferación y apoptosis.
+
+BIOLOGÍA DEL CÁNCER:
+
+Carcinogénesis: Proceso multifásico que incluye iniciación, promoción y progresión tumoral. Las alteraciones en oncogenes como RAS, MYC y genes supresores tumorales como TP53 y RB1 son eventos cruciales.
+
+Metástasis: Diseminación de células tumorales a sitios distantes mediante invasión vascular, supervivencia en circulación y establecimiento en órganos diana. Los sitios más frecuentes son pulmón, hígado, hueso y cerebro.
+
+Angiogénesis Tumoral: Formación de nuevos vasos sanguíneos inducida por factores como VEGF (factor de crecimiento endotelial vascular) que permiten el crecimiento tumoral.
+
+PRINCIPALES TIPOS DE CÁNCER:
+
+Carcinoma de Pulmón: Principal causa de muerte por cáncer a nivel mundial. El adenocarcinoma es el subtipo histológico más frecuente. Las mutaciones en EGFR y reordenamientos de ALK son importantes dianas terapéuticas.
+
+Cáncer Colorrectal: Tercera neoplasia más común. La mayoría se origina de pólipos adenomatosos. La vía de inestabilidad de microsatélites (MSI) y la vía de inestabilidad cromosómica (CIN) son las principales rutas patogénicas.
+
+Cáncer de Mama: Neoplasia más frecuente en mujeres. La clasificación molecular incluye subtipos luminal A, luminal B, HER2 positivo y triple negativo. La expresión de receptores hormonales (estrógeno y progesterona) y HER2 determina el tratamiento.
+
+Leucemia Mieloide Aguda: Proliferación clonal de blastos mieloides en médula ósea. Produce anemia, trombocitopenia e inmunosupresión. El cromosoma Filadelfia t(9;22) caracteriza a la leucemia mieloide crónica.
+
+MÉTODOS DIAGNÓSTICOS:
+
+Biopsia y Estudio Histopatológico: Confirmación diagnóstica mediante análisis microscópico. La inmunohistoquímica identifica marcadores tumorales específicos.
+
+Tomografía por Emisión de Positrones (PET-CT): Técnica de imagen molecular que detecta áreas de hipermetabolismo tumoral mediante captación de fluorodesoxiglucosa marcada con flúor-18.
+
+Marcadores Tumorales Séricos: CEA (antígeno carcinoembrionario), CA 19-9, CA 125, PSA (antígeno prostático específico) y alfafetoproteína.
+
+TRATAMIENTOS ONCOLÓGICOS:
+
+Quimioterapia Citotóxica: Agentes como cisplatino, paclitaxel, doxorrubicina y 5-fluorouracilo inhiben la división celular.
+
+Inmunoterapia: Anticuerpos monoclonales anti-PD-1 (pembrolizumab, nivolumab) y anti-PD-L1 bloquean puntos de control inmunológico.
+
+Terapias Dirigidas: Inhibidores de tirosina quinasas como imatinib, erlotinib y trastuzumab actúan sobre blancos moleculares específicos.
+
+Radioterapia: Radiaciones ionizantes causan daño al ADN tumoral. Técnicas de intensidad modulada (IMRT) y radiocirugía estereotáctica mejoran la precisión.
