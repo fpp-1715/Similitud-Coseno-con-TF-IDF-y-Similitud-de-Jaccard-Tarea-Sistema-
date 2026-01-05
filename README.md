@@ -365,3 +365,5 @@ Ciencias de la Computación - 4to Año - Diciembre 2025
 
 RUN SERVER
 "E:\Ciber\sistema\Tarea Extraclase 2\proyecto_equipo8\src"; & "E:\Ciber\sistema\Tarea Extraclase 2\.venv\Scripts\streamlit.exe" run main.py --server.headless true
+
+streamlit run src/main.py
